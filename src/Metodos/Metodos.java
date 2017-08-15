@@ -31,6 +31,30 @@ public class Metodos {
         System.out.println(direccion);
     }
     
+    public void ImprimirEdad(int numero1){//Metodo para imprimir edad con argumento
+    
+        System.out.println(numero1);
+    }
+    
+    public void ImprimirEdad(int numero1, int numero2){//Metodo para imprimir edad con argumento
+    
+        System.out.println(numero1+" "+numero2);
+    }
+    
+    public void Suma(int numero1, int numero2){
+    
+        int suma;
+        suma=numero1+numero2;
+        System.out.println(suma);
+    }
+    
+    public void Resta(int numero1, int numero2){
+    
+        int resta;
+        resta=numero1-numero2;
+        System.out.println(resta);
+    }
+    
     public static void main(String[] args){
     
        
@@ -57,7 +81,14 @@ public class Metodos {
     Pedro.ImprimirNombre();
     Pedro.ImprimirDireccion();
     
+    Miguel.ImprimirEdad(38);
     
+    int numero1=34;
+    int numero2=20;
+    Miguel.ImprimirEdad(numero1, numero2);
+    
+    Pedro.Suma(numero1, numero2);
+    metodo1.Resta(numero1, numero2);
     }
     
 }
