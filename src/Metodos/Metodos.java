@@ -26,7 +26,7 @@ public class Metodos {
         System.out.println(nombre);
     }
     
-    public void ImprimirDireccion(){//Metodo para imprimir nombre
+    public void ImprimirDireccion(){//Metodo para imprimir direccion
     
         System.out.println(direccion);
     }
@@ -34,11 +34,28 @@ public class Metodos {
     public static void main(String[] args){
     
        
-     Metodos metodo1= new Metodos();
-    
+    Metodos metodo1= new Metodos(); //Se crea nuevo objeto llamado metodo1   
     metodo1.ImprimirEdad();
     metodo1.ImprimirNombre();
     metodo1.ImprimirDireccion();
+    
+    Metodos Miguel= new Metodos();//Se crea nuevo objeto llamdo Miguel
+    Miguel.edad=25;
+    Miguel.nombre="Miguel";
+    Miguel.direccion="Rucci 4441";
+    
+    Miguel.ImprimirEdad();
+    Miguel.ImprimirNombre();
+    Miguel.ImprimirDireccion();
+    
+    Metodos Pedro= new Metodos();//Se crea nuevo objeto llamdo Pedro
+    Pedro.edad=33;
+    Pedro.nombre="Pedro";
+    Pedro.direccion="Av soldado de la Frontera";
+    
+    Pedro.ImprimirEdad();
+    Pedro.ImprimirNombre();
+    Pedro.ImprimirDireccion();
     
     
     }
